@@ -33,7 +33,9 @@
 
 .btn.btn-primary,
 .btn.btn-outline-primary:hover {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    background-color: #00BFFF !important;
+    border-color: #00BFFF !important;
 }
 
 .btn-square {
@@ -65,6 +67,7 @@
 .navbar .navbar-brand,
 .navbar .navbar-phone {
     height: 75px;
+     color: #00BFFF !important;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -246,6 +249,19 @@
     }
 }
 
+.bg-primary {
+    background-color: #00BFFF !important;
+}
+
+/* Footer Buttons */
+.btn.btn-primary {
+    background-color: #00BFFF !important;
+    border-color: #00BFFF !important;
+}
+.dropdown-item:hover {
+    background-color: #00BFFF !important;
+    color: #fff !important;
+}
 
 /*** Footer ***/
 .footer .btn.btn-link {
