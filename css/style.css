@@ -73,7 +73,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--bs-dark);
+    color: blue;
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
     outline: none;
@@ -81,7 +81,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
+    color: blue;
 }
 
 .navbar .dropdown-toggle::after {
@@ -250,16 +250,16 @@
 }
 
 .bg-primary {
-    background-color: #00BFFF !important;
+    background-color: blue !important;
 }
 
 /* Footer Buttons */
 .btn.btn-primary {
-    background-color: #00BFFF !important;
-    border-color: #00BFFF !important;
+    background-color: blue !important;
+    border-color: blue !important;
 }
 .dropdown-item:hover {
-    background-color: #00BFFF !important;
+    background-color: blue !important;
     color: #fff !important;
 }
 
@@ -295,7 +295,7 @@
 }
 
 .footer .copyright a {
-    color: var(--bs-primary);
+    color: var(--bs-primary);;
 }
 
 .footer .copyright a:hover {
