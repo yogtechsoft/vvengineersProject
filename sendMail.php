@@ -9,9 +9,9 @@ require 'PHPMailer/SMTP.php';
 
 if(isset($_POST['name']))
 {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $mobile = $_POST['mobile'];
+    $name    = $_POST['name'];
+    $email   = $_POST['email'];
+    $mobile  = $_POST['mobile'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
@@ -19,27 +19,30 @@ if(isset($_POST['name']))
 
     try {
 
-        // Server settings
+        // SMTP Settings
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
 
-        // Your Gmail
-        $mail->Username   = 'yogtechsoft@gmail.com';
+        // Gmail ID
+        $mail->Username   = 'vijay.chavan@vveng.in';
 
         // Gmail App Password
-        $mail->Password   = 'eopv jrmh qqlv fmql';
+        $mail->Password   = 'bskr ljeh onwf iegi';
 
-        $mail->SMTPSecure = 'tls';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
         // Sender
-        $mail->setFrom('yogtechsoft@gmail.com', 'VV Engineers');
+        $mail->setFrom('vijay.chavan@vveng.in', 'VV Engineers');
 
-        // Receiver
-        $mail->addAddress( $email );
+        // Company Mail Receiver
+        $mail->addAddress('vijay.chavan@vveng.in');
 
-        // Content
+        // Reply To Customer
+        $mail->addReplyTo($email, $name);
+
+        // Email Content
         $mail->isHTML(true);
 
         $mail->Subject = "New Contact Form Message";
@@ -74,6 +77,7 @@ if(isset($_POST['name']))
             </tr>
         </table>
         ";
+
         $mail->send();
 
         echo "

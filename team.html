@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>OUR TEAM</title>
+    <title>Certificates</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -191,6 +191,45 @@
 .image-container img {
     width: 100%;
     display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-container img:hover{
+    transform: scale(1.03);
+}
+
+.image-modal{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.9);
+}
+
+/* Full Image */
+.image-modal img{
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close-modal{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* The "CEO & FOUNDER" overlay */
@@ -237,7 +276,7 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid bg-dark text-white p-0">
+  <div class="container-fluid bg-dark text-white p-0">
         <div class="row gx-0 d-none d-lg-flex">
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
@@ -255,10 +294,8 @@
                     <small style="color: blue;">vijay.chavan@vveng.in</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <a class="btn btn-square btn-link border-0 border-end border-secondary" href="" style="color: blue;"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-link border-0 border-end border-secondary" href="" style="color: blue;"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-link border-0 border-end border-secondary" href="" style="color: blue;"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-square btn-link" href="" style="color: blue;"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-link border-0 border-end border-secondary" href="https://www.instagram.com/vv.engineers/" style="color: blue;"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-link border-0 border-end border-secondary" href="https://www.linkedin.com/in/v-v-engineers-2647a12b3" style="color: blue;"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -266,7 +303,7 @@
 
     <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-            <h2 class="m-0" style="color:blue">VV ENGINEERS</h2>
+            <h2 class="m-0" style="color:blue">V V ENGINEERS</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -274,7 +311,6 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-              
                 <div class="nav-item dropdown">
                     <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
                     <div class="dropdown-menu bg-light m-0">
@@ -287,23 +323,28 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Service</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="service.html" class="dropdown-item">Services</a>
-                        <a href="industry.html" class="dropdown-item">Industrial Solutions</a>
+                        <a href="#" class="dropdown-item">Service Details</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Company Infrastructure</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Project</a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="infra.html" class="dropdown-item">Manufacturing Infrastructure</a>
+                        <a href="#" class="dropdown-item">Projects</a>
+                        <a href="#" class="dropdown-item">Project Details</a>
                     </div>
                 </div>
-                <div class="nav-item dropdown">
+                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Product</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="product.html" class="dropdown-item">Company Products</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="review.html" class="dropdown-item">Testimonial</a>
-                        <a href="certificate.html" class="dropdown-item">Certificates</a>
+                        <a href="certificate.html" class="dropdown-item">Certificate</a>
                         <a href="photo.html" class="dropdown-item">Our Photos</a>
+                         <a href="customer.html" class="dropdown-item">Our Customers</a>
+                          <a href="event.html" class="dropdown-item">Event Photos</a>
+                        <a href="visit.html" class="dropdown-item">Client Visit Photo</a>
+
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -317,7 +358,7 @@
 
         <!-- Add Your Image -->
         <!-- Save image inside img folder -->
-        <img src="img/img-1920x1080-2.jpg" alt="Industrial Solutions Banner">
+        <img src="img/certificate.jfif" alt="Industrial Solutions Banner">
 
         <!-- Text on Image -->
         <div class="banner-text">
@@ -328,8 +369,8 @@
     <br>
     <section class="team-section">
         <div class="header-container">
-            <h1 class="outline-text">TEAM</h1>
-            <h2 class="main-title">MEET OUR TEAM OF SKILLED ENGINEERS AND INDUSTRY EXPERTS</h2>
+            <h1 class="outline-text">OUR TEAM</h1>
+            <h2 class="main-title">MEET OUR EXPERTS</h2>
         </div>
 
         <!-- <div class="team-grid">
@@ -357,60 +398,82 @@
                 </div>
             </div>
         </div> -->
+<!-- <div class="team-cards">
+    <div class="profile-card">
+        <div class="image-container">
+            <img src="img/mcbp.png" alt="Andrew Phillips">
+            <div class="job-badge">MCBP</div>
+        </div>
+
+        <div class="details">
+            <h3>MCBP Certificate</h3>
+        </div>
+    </div>
+    <div class="profile-card">
+        <div class="image-container">
+            <img src="img/tuva.png" alt="Andrew Phillips">
+            <div class="job-badge">TUV INDIA</div>
+        </div>
+
+        <div class="details">
+            <h3>TUV INDIA Certificate</h3>
+        </div>
+    </div>
+
+
+    <div class="profile-card">
+        <div class="image-container">
+            <img src="img/fire.png" alt="Andrew Phillips">
+            <div class="job-badge">FIRE SAFETY</div>
+        </div>
+
+        <div class="details">
+            <h3>FIRE SAFETY Certificate</h3>
+        </div>
+    </div>
+</div> -->
 <div class="team-cards">
+
     <div class="profile-card">
         <div class="image-container">
-            <img src="img/abhilatest.png" alt="Andrew Phillips">
-            <div class="job-badge">FOUNDER</div>
+            <img src="img/vijaychavan.jpg" alt="Vijay Chavan" onclick="openImage(this.src)">
+            <div class="job-badge">Founder</div>
         </div>
 
         <div class="details">
-            <h3>ANDREW PHILLIPS</h3>
-
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            <h3>Vijay Chavan</h3>
         </div>
     </div>
 
     <div class="profile-card">
         <div class="image-container">
-            <img src="img/abhilatest.png" alt="Andrew Phillips">
-            <div class="job-badge">FOUNDER</div>
+            <img src="img/rupaliupdated.png" alt="Rupali Chavan" onclick="openImage(this.src)">
+            <div class="job-badge">HR & MARKETING</div>
         </div>
 
         <div class="details">
-            <h3>ANDREW PHILLIPS</h3>
-
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            <h3>Rupali Chavan</h3>
         </div>
     </div>
+
     <div class="profile-card">
         <div class="image-container">
-            <img src="img/abhilatest.png" alt="Andrew Phillips">
-            <div class="job-badge">FOUNDER</div>
+            <img src="img/sudhir.jpeg" alt="Sudhir Uttekar" onclick="openImage(this.src)">
+            <div class="job-badge">PRODUCTION & QUALITY</div>
         </div>
 
         <div class="details">
-            <h3>ANDREW PHILLIPS</h3>
-
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            <h3>Sudhir Uttekar</h3>
         </div>
     </div>
 
 </div>
+<div id="imageModal" class="image-modal">
+    <span class="close-modal" onclick="closeImage()">&times;</span>
+    <img id="popupImage">
+</div>
 
-    </section>
+</section>
 <br>
 <br>
 <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -419,52 +482,47 @@
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white text-uppercase mb-4">Our Office</h3>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Gat No. 1A, Plot No. 1B, Dehu - Alandi Rd, M I D C Technology Park, Talwade, Pimpri-Chinchwad, Maharashtra 411062</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>099213 51234</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>9422006621 / 9921351234</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>vijay.chavan@vveng.in</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                   
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white text-uppercase mb-4">Quick Links</h3>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="contact.html">Contact Us</a>
                     <a class="btn btn-link" href="services.html">Our Services</a>
+                    <a class="btn btn-link" href="team.html">Our Team</a>
+                    <a class="btn btn-link" href="review.html">Testimonial</a>
+                    <a class="btn btn-link" href="customer.html">Our Customers</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white text-uppercase mb-4">Our Partners</h3>
+                    <h3 class="text-white text-uppercase mb-4">Target Industries</h3>
                     <div class="row g-2">
                         <div class="col-4">
-                            <img class="img-fluid" src="img/img-550x350-1.jpg" alt="">
+                            <img class="img-fluid" src="img/foodboiler.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/img-550x350-2.jpg" alt="">
+                            <img class="img-fluid" src="img/oil.webp" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/img-550x350-3.jpg" alt="">
+                            <img class="img-fluid" src="img/chemical.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/img-550x350-4.jpg" alt="">
+                            <img class="img-fluid" src="img/pharma.jfif" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid" src="img/img-550x350-5.jpg" alt="">
+                            <img class="img-fluid" src="img/distt.jfif" alt="">
                         </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="img/img-550x350-6.jpg" alt="">
-                        </div>
+                       
                     </div>
                 </div>
-               
             </div>
         </div>
         <div class="container">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a href="#">Yogeshwar Technology & Solutions</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** The author’s attribution link below must remain intact on your website. ***/-->
@@ -480,5 +538,24 @@
 
 
     <!-- Template Javascript -->
+<script>
+    function openImage(src) {
+        document.getElementById("imageModal").style.display = "block";
+        document.getElementById("popupImage").src = src;
+    }
+
+    function closeImage() {
+        document.getElementById("imageModal").style.display = "none";
+    }
+
+    // Close modal when clicking outside image
+    window.onclick = function(event) {
+        let modal = document.getElementById("imageModal");
+
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
  </body>   
 </html>
